@@ -150,7 +150,7 @@ func (p *Poloniex) GetOrderbook(currencyPair string, depth int) (OrderbookAll, e
 				if err != nil {
 					return oba, err
 				}
-				ob.Asks = append(ob.Asks, OrderbookItem{
+				ob.Bids = append(ob.Bids, OrderbookItem{
 					Price:  price,
 					Amount: orderbook.Bids[x][1].(float64),
 				})
