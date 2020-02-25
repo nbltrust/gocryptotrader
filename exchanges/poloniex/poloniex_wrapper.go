@@ -284,7 +284,7 @@ func (p *Poloniex) FetchOrderbook(currencyPair currency.Pair, assetType asset.It
 // UpdateOrderbook updates and returns the orderbook for a currency pair
 func (p *Poloniex) UpdateOrderbook(currencyPair currency.Pair, assetType asset.Item) (*orderbook.Base, error) {
 	orderBook := new(orderbook.Base)
-	orderbookNew, err := p.GetOrderbook("", 1000)
+	orderbookNew, err := p.GetOrderbook("", 100)
 	if err != nil {
 		return orderBook, err
 	}
