@@ -15,7 +15,7 @@ const (
 	errExchangeNameUnset = "orderbook exchange name not set"
 	errPairNotSet        = "orderbook currency pair not set"
 	errAssetTypeNotSet   = "orderbook asset type not set"
-	errNoOrderbook       = "orderbook bids and asks are empty"
+	ErrNoOrderbook       = "orderbook bids and asks are empty"
 )
 
 // Vars for the orderbook package

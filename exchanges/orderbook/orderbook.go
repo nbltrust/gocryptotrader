@@ -258,7 +258,7 @@ func (b *Base) Process() error {
 	}
 
 	if len(b.Asks) == 0 && len(b.Bids) == 0 {
-		return errors.New(errNoOrderbook)
+		return errors.New(ErrNoOrderbook)
 	}
 
 	if b.LastUpdated.IsZero() {
