@@ -23,7 +23,7 @@ func TestRESTEmptyOrderbook(t *testing.T) {
 	var wg sync.WaitGroup
 	for x := range exchange.Exchanges {
 		name := exchange.Exchanges[x]
-		err := engine.LoadExchange(exchange.Exchanges[x], true, &wg)
+		err = engine.LoadExchange(exchange.Exchanges[x], true, &wg)
 		if err != nil {
 			t.Errorf("Failed to load exchange %s. Error: %s", name, err)
 		}
