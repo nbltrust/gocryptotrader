@@ -20,6 +20,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcAddEventResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -45,6 +51,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcAddPortfolioAddressResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -72,6 +84,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcCancelAllOrdersResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -97,6 +115,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcCancelOrderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -124,6 +148,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGenericExchangeNameResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -149,6 +179,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGenericExchangeNameResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -176,6 +212,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGenericSubsystemResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -199,6 +241,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGenericExchangeNameResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -226,6 +274,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGenericExchangeNameResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -252,6 +306,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGenericSubsystemResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -275,6 +335,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptGenericResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -301,6 +367,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptGenericResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -344,6 +416,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptQueryResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -386,6 +464,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptQueryResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -412,6 +496,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptStatusResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -427,6 +517,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptStatusResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -454,6 +550,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGCTScriptGenericResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -479,6 +581,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetAccountInfoResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -513,6 +621,12 @@
               },
               "title": "Stream result of gctrpcGetAccountInfoResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -536,6 +650,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetAuditEventResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -587,6 +707,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetCommunicationRelayersResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -603,6 +729,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetConfigResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -618,6 +750,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetCryptocurrencyDepositAddressResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -645,6 +783,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetCryptocurrencyDepositAddressesResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -671,6 +815,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetEventsResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -686,6 +836,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetExchangeInfoResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -720,6 +876,12 @@
               },
               "title": "Stream result of gctrpcOrderbookResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -743,6 +905,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetExchangeOTPReponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -768,6 +936,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetExchangeOTPsResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -783,6 +957,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetExchangePairsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -809,6 +989,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetExchangesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -844,6 +1030,12 @@
               },
               "title": "Stream result of gctrpcTickerResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -868,6 +1060,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetForexProvidersResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -884,6 +1082,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetForexRatesResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -899,6 +1103,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetHistoricCandlesResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -956,6 +1166,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetInfoResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -971,6 +1187,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetLoggerDetailsResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -995,6 +1217,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcOrderDetails"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1022,6 +1250,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcOrderbookResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1048,6 +1282,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetOrderbooksResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -1072,6 +1312,12 @@
                 }
               },
               "title": "Stream result of gctrpcOrderbookResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1121,6 +1367,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetOrdersResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1147,6 +1399,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetPortfolioResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -1162,6 +1420,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcGetPortfolioSummaryResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1179,6 +1443,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetRPCEndpointsResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -1195,6 +1465,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetSusbsytemsResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -1210,6 +1486,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcTickerResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1237,6 +1519,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetTickersResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "tags": [
@@ -1261,6 +1549,12 @@
                 }
               },
               "title": "Stream result of gctrpcTickerResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1310,6 +1604,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcRemoveEventResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1335,6 +1635,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcRemovePortfolioAddressResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1362,6 +1668,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcGetLoggerDetailsResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1387,6 +1699,12 @@
             "description": "A successful response.",
             "schema": {
               "$ref": "#/definitions/gctrpcSimulateOrderResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1414,6 +1732,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcSubmitOrderResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1440,6 +1764,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcSimulateOrderResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1457,14 +1787,20 @@
         ]
       }
     },
-    "/v1/withdrawcryptofunds": {
+    "/v1/withdrawaleventbydate": {
       "post": {
-        "operationId": "WithdrawCryptocurrencyFunds",
+        "operationId": "WithdrawalEventsByDate",
         "responses": {
           "200": {
             "description": "A successful response.",
             "schema": {
-              "$ref": "#/definitions/gctrpcWithdrawResponse"
+              "$ref": "#/definitions/gctrpcWithdrawalEventsByExchangeResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
             }
           }
         },
@@ -1474,7 +1810,39 @@
             "in": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/gctrpcWithdrawCurrencyRequest"
+              "$ref": "#/definitions/gctrpcWithdrawalEventsByDateRequest"
+            }
+          }
+        ],
+        "tags": [
+          "GoCryptoTrader"
+        ]
+      }
+    },
+    "/v1/withdrawaleventbyid": {
+      "post": {
+        "operationId": "WithdrawalEventsByExchange",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/gctrpcWithdrawalEventsByExchangeResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/gctrpcWithdrawalEventsByExchangeRequest"
             }
           }
         ],
@@ -1492,6 +1860,12 @@
             "schema": {
               "$ref": "#/definitions/gctrpcWithdrawResponse"
             }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
           }
         },
         "parameters": [
@@ -1500,7 +1874,39 @@
             "in": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/gctrpcWithdrawCurrencyRequest"
+              "$ref": "#/definitions/gctrpcWithdrawFiatRequest"
+            }
+          }
+        ],
+        "tags": [
+          "GoCryptoTrader"
+        ]
+      }
+    },
+    "/v1/withdrawithdrawcryptofundswfiatfunds": {
+      "post": {
+        "operationId": "WithdrawCryptocurrencyFunds",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/gctrpcWithdrawResponse"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response",
+            "schema": {
+              "$ref": "#/definitions/runtimeError"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/gctrpcWithdrawCryptoRequest"
             }
           }
         ],
@@ -1602,6 +2008,13 @@
         "balance": {
           "type": "number",
           "format": "double"
+        },
+        "supported_exchanges": {
+          "type": "string"
+        },
+        "cold_storage": {
+          "type": "boolean",
+          "format": "boolean"
         }
       }
     },
@@ -1758,6 +2171,21 @@
         }
       }
     },
+    "gctrpcCryptoWithdrawalEvent": {
+      "type": "object",
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "address_tag": {
+          "type": "string"
+        },
+        "fee": {
+          "type": "number",
+          "format": "double"
+        }
+      }
+    },
     "gctrpcCurrencyPair": {
       "type": "object",
       "properties": {
@@ -1783,6 +2211,29 @@
         },
         "pair": {
           "$ref": "#/definitions/gctrpcCurrencyPair"
+        }
+      }
+    },
+    "gctrpcFiatWithdrawalEvent": {
+      "type": "object",
+      "properties": {
+        "bank_name": {
+          "type": "string"
+        },
+        "account_name": {
+          "type": "string"
+        },
+        "account_number": {
+          "type": "string"
+        },
+        "bsb": {
+          "type": "string"
+        },
+        "swift": {
+          "type": "string"
+        },
+        "iban": {
+          "type": "string"
         }
       }
     },
@@ -2809,29 +3260,10 @@
         }
       }
     },
-    "gctrpcWithdrawCurrencyRequest": {
+    "gctrpcWithdrawCryptoRequest": {
       "type": "object",
       "properties": {
         "exchange": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "one_time_password": {
-          "type": "string"
-        },
-        "account_id": {
-          "type": "string"
-        },
-        "pin": {
-          "type": "string",
-          "format": "int64"
-        },
-        "trade_password": {
-          "type": "string"
-        },
-        "currency": {
           "type": "string"
         },
         "address": {
@@ -2840,30 +3272,39 @@
         "address_tag": {
           "type": "string"
         },
+        "currency": {
+          "type": "string"
+        },
         "amount": {
           "type": "number",
           "format": "double"
         },
-        "fee_amount": {
+        "fee": {
           "type": "number",
           "format": "double"
         },
-        "bank_name": {
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "gctrpcWithdrawFiatRequest": {
+      "type": "object",
+      "properties": {
+        "exchange": {
           "type": "string"
         },
-        "bank_address": {
+        "currency": {
           "type": "string"
         },
-        "bank_city": {
+        "amount": {
+          "type": "number",
+          "format": "double"
+        },
+        "description": {
           "type": "string"
         },
-        "bank_country": {
-          "type": "string"
-        },
-        "swife_code": {
-          "type": "string"
-        },
-        "wire_currency": {
+        "bank_account_id": {
           "type": "string"
         }
       }
@@ -2871,7 +3312,131 @@
     "gctrpcWithdrawResponse": {
       "type": "object",
       "properties": {
-        "result": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventByIDRequest": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventByIDResponse": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "$ref": "#/definitions/gctrpcWithdrawalEventResponse"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "exchange": {
+          "$ref": "#/definitions/gctrpcWithdrawlExchangeEvent"
+        },
+        "request": {
+          "$ref": "#/definitions/gctrpcWithdrawalRequestEvent"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventsByDateRequest": {
+      "type": "object",
+      "properties": {
+        "exchange": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventsByExchangeRequest": {
+      "type": "object",
+      "properties": {
+        "exchange": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "gctrpcWithdrawalEventsByExchangeResponse": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/gctrpcWithdrawalEventResponse"
+          }
+        }
+      }
+    },
+    "gctrpcWithdrawalRequestEvent": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number",
+          "format": "double"
+        },
+        "type": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "fiat": {
+          "$ref": "#/definitions/gctrpcFiatWithdrawalEvent"
+        },
+        "crypto": {
+          "$ref": "#/definitions/gctrpcCryptoWithdrawalEvent"
+        }
+      }
+    },
+    "gctrpcWithdrawlExchangeEvent": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "status": {
           "type": "string"
         }
       }
@@ -2885,6 +3450,27 @@
         "value": {
           "type": "string",
           "format": "byte"
+        }
+      }
+    },
+    "runtimeError": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string"
+        },
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
         }
       }
     },
