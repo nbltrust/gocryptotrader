@@ -31,20 +31,33 @@ func TestRESTEmptyOrderbook(t *testing.T) {
 	wg.Wait()
 
 	exchanges := engine.GetExchanges()
+	wg.Add(len(exchanges))
 	for x := range exchanges {
-		if !exchanges[x].SupportsREST() {
-			continue
-		}
-		wg.Add(1)
-		assets := exchanges[x].GetAssetTypes()
-		for y := range assets {
-			p := exchanges[x].GetAvailablePairs(assets[y]).GetRandomPair()
-			_, err = exchanges[x].UpdateOrderbook(p, assets[y])
-			if err != nil && err.Error() == orderbook.ErrNoOrderbook {
-				t.Errorf("%s %s %s orderbook error: empty orderbook\n", exchanges[x].GetName(), assets[y], p)
+		go func(x int, wg *sync.WaitGroup) {
+			defer wg.Done()
+			if !exchanges[x].SupportsREST() {
+				return
 			}
-		}
-		wg.Done()
+			assets := exchanges[x].GetAssetTypes()
+			for y := range assets {
+				p := exchanges[x].GetAvailablePairs(assets[y]).GetRandomPair()
+				var ob *orderbook.Base
+				ob, err = exchanges[x].UpdateOrderbook(p, assets[y])
+				if ob == nil {
+					continue
+				}
+				if err != nil && err.Error() == orderbook.ErrNoOrderbook {
+					t.Errorf("%s %s %s orderbook error: empty orderbook\n", exchanges[x].GetName(), assets[y], p)
+					continue
+				}
+				if len(ob.Bids) == 0 {
+					t.Errorf("%s %s %s orderbook error: empty bids\n", exchanges[x].GetName(), assets[y], p)
+				}
+				if len(ob.Asks) == 0 {
+					t.Errorf("%s %s %s orderbook error: empty asks\n", exchanges[x].GetName(), assets[y], p)
+				}
+			}
+		}(x, &wg)
 	}
 	wg.Wait()
 }
