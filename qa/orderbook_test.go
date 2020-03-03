@@ -41,8 +41,7 @@ func TestRESTEmptyOrderbook(t *testing.T) {
 			assets := exchanges[x].GetAssetTypes()
 			for y := range assets {
 				p := exchanges[x].GetAvailablePairs(assets[y]).GetRandomPair()
-				var ob *orderbook.Base
-				ob, err = exchanges[x].UpdateOrderbook(p, assets[y])
+				ob, err := exchanges[x].UpdateOrderbook(p, assets[y])
 				if ob == nil {
 					continue
 				}
