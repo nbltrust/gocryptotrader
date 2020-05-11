@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/gofrs/uuid"
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/dispatch"
 )
 

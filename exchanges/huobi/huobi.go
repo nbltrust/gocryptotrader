@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/currency"
+	exchange "github.com/nbltrust/gocryptotrader/exchanges"
+	"github.com/nbltrust/gocryptotrader/exchanges/request"
+	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/websocket/wshandler"
 )
 
 const (

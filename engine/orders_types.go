@@ -3,8 +3,8 @@ package engine
 import (
 	"sync"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
+	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/exchanges/order"
 )
 
 type orderManagerConfig struct {

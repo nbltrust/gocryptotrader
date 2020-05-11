@@ -8,10 +8,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/websocket"
+	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
 )
 
 // Vars for the websocket client

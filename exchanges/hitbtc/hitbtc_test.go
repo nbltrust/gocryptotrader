@@ -8,15 +8,15 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
+	"github.com/nbltrust/gocryptotrader/currency"
+	exchange "github.com/nbltrust/gocryptotrader/exchanges"
+	"github.com/nbltrust/gocryptotrader/exchanges/asset"
+	"github.com/nbltrust/gocryptotrader/exchanges/order"
+	"github.com/nbltrust/gocryptotrader/exchanges/sharedtestvalues"
+	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
 	"github.com/thrasher-corp/gocryptotrader/common"
 	"github.com/thrasher-corp/gocryptotrader/config"
 	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	exchange "github.com/thrasher-corp/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/sharedtestvalues"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/websocket/wshandler"
 	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
 )
 

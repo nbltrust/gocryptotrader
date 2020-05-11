@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/orderbook"
+	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/exchanges/asset"
+	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 )
 
 // WebsocketOrderbookLocal defines a local cache of orderbooks for amending,

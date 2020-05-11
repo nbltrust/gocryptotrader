@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/orderbook"
+	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/exchanges/asset"
+	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 )
 
 // Setup sets private variables

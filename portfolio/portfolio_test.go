@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/currency"
 )
 
 const (

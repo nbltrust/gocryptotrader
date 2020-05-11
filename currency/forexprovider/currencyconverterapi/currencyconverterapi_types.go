@@ -3,8 +3,8 @@ package currencyconverter
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/exchanges/request"
+	"github.com/nbltrust/gocryptotrader/currency/forexprovider/base"
+	"github.com/nbltrust/gocryptotrader/exchanges/request"
 )
 
 // const declarations consist of endpoints

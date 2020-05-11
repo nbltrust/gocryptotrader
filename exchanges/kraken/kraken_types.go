@@ -3,7 +3,7 @@ package kraken
 import (
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/currency"
 )
 
 // TimeResponse type

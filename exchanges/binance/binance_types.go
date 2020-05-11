@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/currency"
 )
 
 var errInvalidInterval = errors.New("invalid interval")

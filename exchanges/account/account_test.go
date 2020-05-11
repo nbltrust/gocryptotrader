@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/thrasher-corp/gocryptotrader/dispatch"
 )
 
