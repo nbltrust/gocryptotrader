@@ -513,6 +513,11 @@ func (b *Binance) GetOrderInfo(orderID string) (order.Detail, error) {
 
 // GetDepositAddress returns a deposit address for a specified currency
 func (b *Binance) GetDepositAddress(cryptocurrency currency.Code, _ string) (string, error) {
+	return "", common.ErrNotYetImplemented
+}
+
+// GetDepositAddressObj returns a deposit address for a specified currency
+func (b *Binance) GetDepositAddressObj(cryptocurrency currency.Code, _ string) (DepositAddress, error) {
 	return b.GetDepositAddressForCurrency(cryptocurrency.String())
 }
 
