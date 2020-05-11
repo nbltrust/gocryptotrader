@@ -701,3 +701,10 @@ type wsListStauts struct {
 	RejectionReason string `json:"r"`
 	Symbol          string `json:"s"`
 }
+
+// DepositAddress ...
+type DepositAddress struct {
+	Address    string `json:"address"`
+	Success    bool   `json:"success"`
+	AddressTag string `json:"addressTag"`
+}

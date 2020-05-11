@@ -679,20 +679,15 @@ func (b *Binance) WithdrawCrypto(asset, address, addressTag, name, amount string
 }
 
 // GetDepositAddressForCurrency retrieves the wallet address for a given currency
-func (b *Binance) GetDepositAddressForCurrency(currency string) (string, error) {
+func (b *Binance) GetDepositAddressForCurrency(currency string) (DepositAddress, error) {
 	path := b.API.Endpoints.URL + depositAddress
 
-	resp := struct {
-		Address    string `json:"address"`
-		Success    bool   `json:"success"`
-		AddressTag string `json:"addressTag"`
-	}{}
-
+	resp := DepositAddress{}
 	params := url.Values{}
 	params.Set("asset", currency)
 	params.Set("status", "true")
 
-	return resp.Address,
+	return resp,
 		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
 }
 
