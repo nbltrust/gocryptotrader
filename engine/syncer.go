@@ -9,7 +9,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // const holds the sync item types

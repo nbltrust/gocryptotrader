@@ -6,12 +6,12 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
+	"github.com/nbltrust/gocryptotrader/common"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/wrappers"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/gctscript/wrappers"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 var exchangeModule = map[string]objects.Object{

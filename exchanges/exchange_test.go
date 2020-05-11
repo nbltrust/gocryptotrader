@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/protocol"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
 )
 
 const (

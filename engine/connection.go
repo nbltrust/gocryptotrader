@@ -4,8 +4,8 @@ import (
 	"errors"
 	"sync/atomic"
 
-	"github.com/thrasher-corp/gocryptotrader/connchecker"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/connchecker"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // connectionManager manages the connchecker

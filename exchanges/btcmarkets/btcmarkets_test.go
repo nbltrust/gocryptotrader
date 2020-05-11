@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/kline"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
 	"github.com/nbltrust/gocryptotrader/exchanges/sharedtestvalues"
-	"github.com/thrasher-corp/gocryptotrader/config"
 )
 
 var b BTCMarkets

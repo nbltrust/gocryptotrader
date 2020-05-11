@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common/file"
 	"github.com/nbltrust/gocryptotrader/currency/coinmarketcap"
 	"github.com/nbltrust/gocryptotrader/currency/forexprovider"
 	"github.com/nbltrust/gocryptotrader/currency/forexprovider/base"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 func init() {

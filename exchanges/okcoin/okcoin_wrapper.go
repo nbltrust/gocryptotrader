@@ -4,6 +4,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
@@ -12,9 +14,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // GetDefaultConfig returns a default exchange config

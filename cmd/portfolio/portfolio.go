@@ -6,11 +6,11 @@ import (
 	"log"
 	"os"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/bitfinex"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/nbltrust/gocryptotrader/portfolio"
 )
 
 var (

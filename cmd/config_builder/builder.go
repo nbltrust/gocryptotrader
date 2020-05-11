@@ -5,9 +5,9 @@ import (
 	"log"
 	"sync"
 
+	"github.com/nbltrust/gocryptotrader/config"
+	"github.com/nbltrust/gocryptotrader/engine"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/engine"
 )
 
 func main() {

@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common/crypto"
 	"github.com/nbltrust/gocryptotrader/currency"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/nbltrust/gocryptotrader/config"
 )
 
 func TestNewCurrencyPairSyncer(t *testing.T) {

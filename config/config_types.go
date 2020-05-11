@@ -5,12 +5,12 @@ import (
 	"time"
 
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/database"
 	"github.com/nbltrust/gocryptotrader/exchanges/protocol"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	gctscript "github.com/nbltrust/gocryptotrader/gctscript/vm"
+	"github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/portfolio"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
 )
 
 // Constants declared here are filename strings and test strings

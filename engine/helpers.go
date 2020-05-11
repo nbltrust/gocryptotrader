@@ -17,20 +17,20 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/common/file"
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/dispatch"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/account"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 	"github.com/nbltrust/gocryptotrader/exchanges/stats"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
+	"github.com/nbltrust/gocryptotrader/gctscript/vm"
+	"github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/portfolio"
 	"github.com/pquerna/otp/totp"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
 )
 
 var (

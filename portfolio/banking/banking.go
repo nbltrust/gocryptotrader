@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/nbltrust/gocryptotrader/common"
 	"github.com/nbltrust/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/common"
 )
 
 // GetBankAccountByID Returns a bank account based on its ID

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/common"
 )
 
 func (r Role) String() string {

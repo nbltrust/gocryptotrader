@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
+	"github.com/nbltrust/gocryptotrader/database"
+	"github.com/nbltrust/gocryptotrader/database/drivers"
 )
 
 func TestMain(m *testing.M) {

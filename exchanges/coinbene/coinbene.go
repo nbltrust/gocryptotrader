@@ -13,12 +13,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/common/crypto"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 )
 
 // Coinbene is the overarching type across this package

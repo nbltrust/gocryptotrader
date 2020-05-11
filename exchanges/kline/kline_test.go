@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common/crypto"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
 )
 
 func TestValidateData(t *testing.T) {

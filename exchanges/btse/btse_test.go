@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nbltrust/gocryptotrader/config"
+	"github.com/nbltrust/gocryptotrader/core"
 	"github.com/nbltrust/gocryptotrader/currency"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
 	"github.com/nbltrust/gocryptotrader/exchanges/sharedtestvalues"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
 )
 
 // Please supply your own keys here to do better tests

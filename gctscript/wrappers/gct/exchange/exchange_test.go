@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/engine"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/engine"
 )
 
 // change these if you wish to test another exchange and/or currency pair

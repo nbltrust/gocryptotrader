@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	"github.com/gorilla/websocket"
+	"github.com/nbltrust/gocryptotrader/common/crypto"
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/common/crypto"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // Const vars for websocket

@@ -13,18 +13,18 @@ import (
 	"sync"
 	"text/template"
 
+	"github.com/nbltrust/gocryptotrader/common/file"
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/engine"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/account"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
 	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
-	"github.com/thrasher-corp/gocryptotrader/common/file"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 func main() {

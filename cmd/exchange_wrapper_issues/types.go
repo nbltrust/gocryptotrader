@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/config"
 )
 
 // variables for command line overrides

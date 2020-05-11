@@ -17,7 +17,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wsorderbook"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 const (

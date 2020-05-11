@@ -3,8 +3,8 @@ package smtpservice
 import (
 	"testing"
 
-	"github.com/thrasher-corp/gocryptotrader/communications/base"
-	"github.com/thrasher-corp/gocryptotrader/config"
+	"github.com/nbltrust/gocryptotrader/communications/base"
+	"github.com/nbltrust/gocryptotrader/config"
 )
 
 var s SMTPservice

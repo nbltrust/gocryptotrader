@@ -14,7 +14,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 	"github.com/toorop/go-pusher"
 )
 

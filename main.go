@@ -8,17 +8,17 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/config"
+	"github.com/nbltrust/gocryptotrader/core"
+	"github.com/nbltrust/gocryptotrader/dispatch"
+	"github.com/nbltrust/gocryptotrader/engine"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	"github.com/thrasher-corp/gocryptotrader/gctscript"
-	gctscriptVM "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	gctlog "github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/signaler"
+	"github.com/nbltrust/gocryptotrader/gctscript"
+	gctscriptVM "github.com/nbltrust/gocryptotrader/gctscript/vm"
+	gctlog "github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/signaler"
 )
 
 func main() {

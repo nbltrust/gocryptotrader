@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	withdrawDataStore "github.com/thrasher-corp/gocryptotrader/database/repository/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/gctrpc"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	withdrawDataStore "github.com/nbltrust/gocryptotrader/database/repository/withdraw"
+	"github.com/nbltrust/gocryptotrader/gctrpc"
+	"github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 const (

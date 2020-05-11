@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/engine"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 const (

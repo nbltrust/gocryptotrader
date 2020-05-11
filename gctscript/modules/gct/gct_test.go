@@ -8,8 +8,8 @@ import (
 	"time"
 
 	objects "github.com/d5/tengo/v2"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/modules"
-	"github.com/thrasher-corp/gocryptotrader/gctscript/wrappers/validator"
+	"github.com/nbltrust/gocryptotrader/gctscript/modules"
+	"github.com/nbltrust/gocryptotrader/gctscript/wrappers/validator"
 )
 
 var (

@@ -6,6 +6,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/nbltrust/gocryptotrader/common"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
@@ -13,8 +14,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/stats"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 func printCurrencyFormat(price float64) string {

@@ -4,15 +4,15 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/connchecker"
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/database"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/connchecker"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	"github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/ntpclient"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
+	gctscript "github.com/nbltrust/gocryptotrader/gctscript/vm"
+	"github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/ntpclient"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
 )
 
 const (

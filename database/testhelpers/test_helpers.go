@@ -4,10 +4,10 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	psqlConn "github.com/thrasher-corp/gocryptotrader/database/drivers/postgres"
-	sqliteConn "github.com/thrasher-corp/gocryptotrader/database/drivers/sqlite3"
+	"github.com/nbltrust/gocryptotrader/database"
+	"github.com/nbltrust/gocryptotrader/database/drivers"
+	psqlConn "github.com/nbltrust/gocryptotrader/database/drivers/postgres"
+	sqliteConn "github.com/nbltrust/gocryptotrader/database/drivers/sqlite3"
 )
 
 var (

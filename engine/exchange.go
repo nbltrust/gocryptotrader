@@ -5,6 +5,7 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/nbltrust/gocryptotrader/common"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/binance"
 	"github.com/nbltrust/gocryptotrader/exchanges/bitfinex"
@@ -33,8 +34,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/poloniex"
 	"github.com/nbltrust/gocryptotrader/exchanges/yobit"
 	"github.com/nbltrust/gocryptotrader/exchanges/zb"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // vars related to exchange functions

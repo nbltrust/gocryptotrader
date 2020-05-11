@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
+	"github.com/nbltrust/gocryptotrader/common/convert"
 	"github.com/nbltrust/gocryptotrader/currency"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
@@ -19,8 +20,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wsorderbook"
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
-	"github.com/thrasher-corp/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/log"
 )
 
 // List of all websocket channels to subscribe to

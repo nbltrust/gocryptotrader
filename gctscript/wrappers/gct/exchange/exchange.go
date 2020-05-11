@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/engine"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/account"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
@@ -15,9 +16,8 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
 	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
-	"github.com/thrasher-corp/gocryptotrader/engine"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 // Exchange implements all required methods for Wrapper

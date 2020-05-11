@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/nbltrust/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/database"
-	"github.com/thrasher-corp/gocryptotrader/database/drivers"
-	"github.com/thrasher-corp/gocryptotrader/database/repository"
-	"github.com/thrasher-corp/gocryptotrader/database/testhelpers"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/database"
+	"github.com/nbltrust/gocryptotrader/database/drivers"
+	"github.com/nbltrust/gocryptotrader/database/repository"
+	"github.com/nbltrust/gocryptotrader/database/testhelpers"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 	"github.com/thrasher-corp/goose"
 )
 

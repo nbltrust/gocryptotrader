@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/thrasher-corp/gocryptotrader/common/convert"
+	"github.com/nbltrust/gocryptotrader/common/convert"
 )
 
 func getWriters(s *SubLoggerConfig) io.Writer {

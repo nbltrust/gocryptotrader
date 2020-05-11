@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/thrasher-corp/gocryptotrader/log"
-	ntpclient "github.com/thrasher-corp/gocryptotrader/ntpclient"
+	"github.com/nbltrust/gocryptotrader/log"
+	ntpclient "github.com/nbltrust/gocryptotrader/ntpclient"
 )
 
 // vars related to the NTP manager

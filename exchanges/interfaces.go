@@ -4,6 +4,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/account"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
@@ -12,8 +13,7 @@ import (
 	"github.com/nbltrust/gocryptotrader/exchanges/orderbook"
 	"github.com/nbltrust/gocryptotrader/exchanges/ticker"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 // IBotExchange enforces standard functions for all exchanges supported in

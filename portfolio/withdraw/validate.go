@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/nbltrust/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
+	"github.com/nbltrust/gocryptotrader/portfolio"
 )
 
 // Validate takes interface and passes to asset type to check the request meets requirements to submit

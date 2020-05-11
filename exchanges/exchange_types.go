@@ -3,11 +3,11 @@ package exchange
 import (
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/exchanges/protocol"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
 	"github.com/nbltrust/gocryptotrader/exchanges/websocket/wshandler"
-	"github.com/thrasher-corp/gocryptotrader/config"
 )
 
 // Endpoint authentication types

@@ -4,12 +4,12 @@ import (
 	"net/url"
 	"testing"
 
+	"github.com/nbltrust/gocryptotrader/core"
 	"github.com/nbltrust/gocryptotrader/currency"
 	exchange "github.com/nbltrust/gocryptotrader/exchanges"
 	"github.com/nbltrust/gocryptotrader/exchanges/order"
-	"github.com/thrasher-corp/gocryptotrader/core"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/banking"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/portfolio/banking"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
 )
 
 // Please add your private keys and customerID for better tests

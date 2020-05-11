@@ -5,7 +5,7 @@ import (
 
 	"github.com/gofrs/uuid"
 	"github.com/nbltrust/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
+	"github.com/nbltrust/gocryptotrader/dispatch"
 )
 
 // Vars for the ticker package

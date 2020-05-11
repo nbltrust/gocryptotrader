@@ -9,8 +9,8 @@ import (
 
 	"github.com/gofrs/uuid"
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/dispatch"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
 )
 
 // Get checks and returns the orderbook given an exchange name and currency pair

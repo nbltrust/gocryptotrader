@@ -11,17 +11,17 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
+	"github.com/nbltrust/gocryptotrader/config"
 	"github.com/nbltrust/gocryptotrader/currency"
 	"github.com/nbltrust/gocryptotrader/currency/coinmarketcap"
+	"github.com/nbltrust/gocryptotrader/dispatch"
 	"github.com/nbltrust/gocryptotrader/exchanges/request"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/config"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
-	gctscript "github.com/thrasher-corp/gocryptotrader/gctscript/vm"
-	gctlog "github.com/thrasher-corp/gocryptotrader/log"
-	"github.com/thrasher-corp/gocryptotrader/portfolio"
-	"github.com/thrasher-corp/gocryptotrader/portfolio/withdraw"
-	"github.com/thrasher-corp/gocryptotrader/utils"
+	gctscript "github.com/nbltrust/gocryptotrader/gctscript/vm"
+	gctlog "github.com/nbltrust/gocryptotrader/log"
+	"github.com/nbltrust/gocryptotrader/portfolio"
+	"github.com/nbltrust/gocryptotrader/portfolio/withdraw"
+	"github.com/nbltrust/gocryptotrader/utils"
 )
 
 // Engine contains configuration, portfolio, exchange & ticker data and is the

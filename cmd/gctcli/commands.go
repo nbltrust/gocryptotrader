@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nbltrust/gocryptotrader/common"
 	"github.com/nbltrust/gocryptotrader/currency"
-	"github.com/thrasher-corp/gocryptotrader/common"
-	"github.com/thrasher-corp/gocryptotrader/gctrpc"
+	"github.com/nbltrust/gocryptotrader/gctrpc"
 	"github.com/urfave/cli"
 )
 

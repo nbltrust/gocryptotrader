@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/nbltrust/gocryptotrader/currency"
+	"github.com/nbltrust/gocryptotrader/dispatch"
 	"github.com/nbltrust/gocryptotrader/exchanges/asset"
-	"github.com/thrasher-corp/gocryptotrader/dispatch"
 )
 
 func TestMain(m *testing.M) {
