@@ -57,6 +57,8 @@ const (
 	huobiWithdrawCreate        = "dw/withdraw/api/create"
 	huobiWithdrawCancel        = "dw/withdraw-virtual/%s/cancel"
 	huobiStatusError           = "error"
+
+	huobiDepositWithdrawHistory = "query/deposit-withdraw"
 )
 
 // HUOBI is the overarching type across this package
@@ -691,6 +693,25 @@ func (h *HUOBI) QueryDepositAddress(cryptocurrency string) (DepositAddress, erro
 		return DepositAddress{}, errors.New("deposit address data isn't populated")
 	}
 	return resp.DepositAddress[0], nil
+}
+
+// GetWithdrawalHistory returns the withdrawal history
+func (h *HUOBI) GetWithdrawalHistory(cryptocurrency string) ([]WithdrawalHistory, error) {
+	resp := struct {
+		WithdrawalList []WithdrawalHistory `json:"data"`
+	}{}
+
+	vals := url.Values{}
+	vals.Set("currency", cryptocurrency)
+	vals.Set("type", "withdraw")
+	vals.Set("size", "100")
+	vals.Set("direct", "next")
+
+	err := h.SendAuthenticatedHTTPRequest(http.MethodGet, huobiDepositWithdrawHistory, vals, nil, &resp, false)
+	if err != nil {
+		return nil, err
+	}
+	return resp.WithdrawalList, nil
 }
 
 // QueryWithdrawQuotas returns the users cryptocurrency withdraw quotas

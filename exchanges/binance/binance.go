@@ -537,6 +537,7 @@ func (b *Binance) SendAuthHTTPRequest(method, path string, params url.Values, f 
 		return err
 	}
 
+	fmt.Println(string(interim))
 	if err := json.Unmarshal(interim, &errCap); err == nil {
 		if !errCap.Success && errCap.Message != "" {
 			return errors.New(errCap.Message)
@@ -689,6 +690,28 @@ func (b *Binance) GetDepositAddressForCurrency(currency string) (DepositAddress,
 
 	return resp,
 		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
+}
+
+// GetWithdrawalHistory get withdrawal history
+func (b *Binance) GetWithdrawalHistory(asset string, startTimestamp int64) ([]WithdrawalHistory, error) {
+	var resp WithdrawalHistoryResponse
+	path := b.API.Endpoints.URL + withdrawalHistory
+
+	params := url.Values{}
+	params.Set("asset", asset)
+	if startTimestamp > 0 {
+		params.Set("startTime", fmt.Sprintf("%d", startTimestamp))
+	}
+
+	if err := b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp); err != nil {
+		return nil, err
+	}
+
+	if !resp.Success {
+		return nil, errors.New(resp.Msg)
+	}
+
+	return resp.WithdrawList, nil
 }
 
 // GetWsAuthStreamKey will retrieve a key to use for authorised WS streaming

@@ -278,6 +278,34 @@ type WithdrawQuota struct {
 	Chains   []ChainQuota `json:"chains"`
 }
 
+/* WithdrawalHistory ...
+{
+	"id": 1171,
+	"type": "deposit",
+	"currency": "xrp",
+	"tx-hash": "ed03094b84eafbe4bc16e7ef766ee959885ee5bcb265872baaa9c64e1cf86c2b",
+	"amount": 7.457467,
+	"address": "rae93V8d2mdoUQHwBDBdM4NHCMehRJAsbm",
+	"address-tag": "100040",
+	"fee": 0,
+	"state": "safe",
+	"created-at": 1510912472199,
+	"updated-at": 1511145876575
+}*/
+type WithdrawalHistory struct {
+	ID         int     `json:"id"`
+	Type       string  `json:"type"`
+	Currency   string  `json:"currency"`
+	TxID       string  `json:"tx-hash"`
+	Amount     float64 `json:"amount"`
+	Address    string  `json:"address"`
+	AddressTag string  `json:"address-tag"`
+	Fee        float64 `json:"fee"`
+	State      string  `json:"state"`
+	CreatedAt  int     `json:"created-at"`
+	UpdatedAt  int     `json:"updated-at"`
+}
+
 // SpotNewOrderRequestParamsType order type
 type SpotNewOrderRequestParamsType string
 

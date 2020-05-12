@@ -512,6 +512,30 @@ func (p *Poloniex) Withdraw(currency, address string, amount float64) (*Withdraw
 	return result, nil
 }
 
+// WithdrawV2 withdraws a currency to a specific delegated address
+func (p *Poloniex) WithdrawV2(currency, currencyToWithdrawAs, address string, amount float64) (*Withdraw, error) {
+	result := &Withdraw{}
+	values := url.Values{}
+
+	values.Set("currency", currency)
+	values.Set("amount", strconv.FormatFloat(amount, 'f', -1, 64))
+	values.Set("address", address)
+	if len(currencyToWithdrawAs) > 0 {
+		values.Set("currencyToWithdrawAs", currencyToWithdrawAs)
+	}
+
+	err := p.SendAuthenticatedHTTPRequest(http.MethodPost, poloniexWithdraw, values, &result)
+	if err != nil {
+		return nil, err
+	}
+
+	if result.Error != "" {
+		return nil, errors.New(result.Error)
+	}
+
+	return result, nil
+}
+
 // GetFeeInfo returns fee information
 func (p *Poloniex) GetFeeInfo() (Fee, error) {
 	result := Fee{}

@@ -313,6 +313,26 @@ type NewOrderResponse struct {
 	} `json:"fills"`
 }
 
+// WithdrawalHistory ...
+type WithdrawalHistory struct {
+	ID              string  `json:"ID"`
+	WithdrawOrderID string  `json:"withdrawOrderId"`
+	Amount          float64 `json:"amount"`
+	TransactionFee  float64 `json:"transactionFee"`
+	Address         string  `json:"address"`
+	Asset           string  `json:"asset"`
+	TxID            string  `json:"txId"`
+	Status          int     `json:"status"`
+	ApplyTime       int64   `json:"applyTime"`
+}
+
+// WithdrawalHistoryResponse ...
+type WithdrawalHistoryResponse struct {
+	Success      bool                `json:"success"`
+	Msg          string              `json:"msg"`
+	WithdrawList []WithdrawalHistory `json:"withdrawList"`
+}
+
 // CancelOrderResponse is the return structured response from the exchange
 type CancelOrderResponse struct {
 	Symbol            string `json:"symbol"`
