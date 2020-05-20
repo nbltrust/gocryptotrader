@@ -119,7 +119,7 @@ type GetDepositAddressResponse struct {
 	PaymentID string `json:"payment_id,omitempty"`
 	Memo      string `json:"memo,omitempty"`
 	Currency  string `json:"currency"`
-	To        string `json:"to"`
+	To        int    `json:"to"`
 }
 
 // GetAccountDepositHistoryResponse response data for GetAccountDepositHistory
