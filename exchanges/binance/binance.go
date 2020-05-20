@@ -692,6 +692,30 @@ func (b *Binance) GetDepositAddressForCurrency(currency string) (DepositAddress,
 		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
 }
 
+// GetDepositAddressForCurrency2 retrieves the wallet address for a given currency
+func (b *Binance) GetDepositAddressForCurrency2(currency, network string) (DepositAddress, error) {
+	path := b.API.Endpoints.URL + "/sapi/v1/capital/deposit/address"
+
+	resp := DepositAddress{}
+	params := url.Values{}
+	params.Set("coin", currency)
+	params.Set("network", network)
+
+	return resp,
+		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
+}
+
+// GetDepositAddressNetwork ...
+func (b *Binance) GetDepositAddressNetwork() (DepositAddress, error) {
+	path := b.API.Endpoints.URL + "/sapi/v1/capital/config/getall"
+
+	resp := DepositAddress{}
+	params := url.Values{}
+
+	return resp,
+		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
+}
+
 // GetWithdrawalHistory get withdrawal history
 func (b *Binance) GetWithdrawalHistory(asset string, startTimestamp int64) ([]WithdrawalHistory, error) {
 	var resp WithdrawalHistoryResponse

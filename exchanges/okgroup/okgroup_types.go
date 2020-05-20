@@ -87,7 +87,9 @@ type WithdrawalHistoryResponse struct {
 	To            string    `json:"to"`
 	TransactionID string    `json:"txid"`
 	PaymentID     string    `json:"payment_id"`
+	Memo          string    `json:"memo"`
 	Tag           string    `json:"tag"`
+	WithdrawalID  string    `json:"withdrawal_id"`
 }
 
 // GetAccountBillDetailsRequest request data for GetAccountBillDetailsRequest
@@ -115,7 +117,9 @@ type GetDepositAddressResponse struct {
 	Address   string `json:"address"`
 	Tag       string `json:"tag"`
 	PaymentID string `json:"payment_id,omitempty"`
+	Memo      string `json:"memo,omitempty"`
 	Currency  string `json:"currency"`
+	To        string `json:"to"`
 }
 
 // GetAccountDepositHistoryResponse response data for GetAccountDepositHistory
