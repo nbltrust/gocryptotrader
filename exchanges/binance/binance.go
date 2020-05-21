@@ -679,6 +679,39 @@ func (b *Binance) WithdrawCrypto(asset, address, addressTag, name, amount string
 	return resp.ID, nil
 }
 
+// WithdrawCryptoWithNetwork sends cryptocurrency to the address of your choosing
+func (b *Binance) WithdrawCryptoWithNetwork(asset, address, addressTag, name, amount, network, orderID string) (string, error) {
+	var resp WithdrawResponse
+	path := b.API.Endpoints.URL + "/sapi/v1/capital/withdraw/apply"
+
+	params := url.Values{}
+	params.Set("coin", asset)
+	params.Set("address", address)
+	params.Set("amount", amount)
+	if len(name) > 0 {
+		params.Set("name", name)
+	}
+	if len(addressTag) > 0 {
+		params.Set("addressTag", addressTag)
+	}
+	if len(network) > 0 {
+		params.Set("network", network)
+	}
+	if len(orderID) > 0 {
+		params.Set("withdrawOrderId", orderID)
+	}
+
+	if err := b.SendAuthHTTPRequest(http.MethodPost, path, params, request.Unset, &resp); err != nil {
+		return "", err
+	}
+
+	if !resp.Success {
+		return resp.ID, errors.New(resp.Msg)
+	}
+
+	return resp.ID, nil
+}
+
 // GetDepositAddressForCurrency retrieves the wallet address for a given currency
 func (b *Binance) GetDepositAddressForCurrency(currency string) (DepositAddress, error) {
 	path := b.API.Endpoints.URL + depositAddress
