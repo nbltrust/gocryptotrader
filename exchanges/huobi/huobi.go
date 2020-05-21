@@ -695,6 +695,25 @@ func (h *HUOBI) QueryDepositAddress(cryptocurrency string) (DepositAddress, erro
 	return resp.DepositAddress[0], nil
 }
 
+// QueryDepositAddresses returns the deposit address for a specified currency
+func (h *HUOBI) QueryDepositAddresses(cryptocurrency string) ([]DepositAddress, error) {
+	resp := struct {
+		DepositAddress []DepositAddress `json:"data"`
+	}{}
+
+	vals := url.Values{}
+	vals.Set("currency", cryptocurrency)
+
+	err := h.SendAuthenticatedHTTPRequest(http.MethodGet, huobiAccountDepositAddress, vals, nil, &resp, true)
+	if err != nil {
+		return nil, err
+	}
+	if len(resp.DepositAddress) == 0 {
+		return nil, errors.New("deposit address data isn't populated")
+	}
+	return resp.DepositAddress, nil
+}
+
 // GetWithdrawalHistory returns the withdrawal history
 func (h *HUOBI) GetWithdrawalHistory(cryptocurrency string) ([]WithdrawalHistory, error) {
 	resp := struct {

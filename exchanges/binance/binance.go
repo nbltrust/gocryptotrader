@@ -692,8 +692,8 @@ func (b *Binance) GetDepositAddressForCurrency(currency string) (DepositAddress,
 		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
 }
 
-// GetDepositAddressForCurrency2 retrieves the wallet address for a given currency
-func (b *Binance) GetDepositAddressForCurrency2(currency, network string) (DepositAddress, error) {
+// GetDepositAddressForCurrencyNetwork retrieves the wallet address for a given currency
+func (b *Binance) GetDepositAddressForCurrencyNetwork(currency, network string) (DepositAddress, error) {
 	path := b.API.Endpoints.URL + "/sapi/v1/capital/deposit/address"
 
 	resp := DepositAddress{}

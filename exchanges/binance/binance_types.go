@@ -726,5 +726,5 @@ type wsListStauts struct {
 type DepositAddress struct {
 	Address    string `json:"address"`
 	Success    bool   `json:"success"`
-	AddressTag string `json:"addressTag"`
+	AddressTag string `json:"tag"`
 }
