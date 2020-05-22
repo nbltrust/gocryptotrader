@@ -320,6 +320,7 @@ type WithdrawalHistory struct {
 	Amount          float64 `json:"amount"`
 	TransactionFee  float64 `json:"transactionFee"`
 	Address         string  `json:"address"`
+	AddressTag      string  `json:"addressTag"`
 	Asset           string  `json:"asset"`
 	TxID            string  `json:"txId"`
 	Status          int     `json:"status"`
