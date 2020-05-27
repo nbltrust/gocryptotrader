@@ -705,8 +705,8 @@ func (b *Binance) WithdrawCryptoWithNetwork(asset, address, addressTag, name, am
 		return "", err
 	}
 
-	if !resp.Success {
-		return resp.ID, errors.New(resp.Msg)
+	if len(resp.ID) == 0 {
+		return "", errors.New(resp.Msg)
 	}
 
 	return resp.ID, nil
