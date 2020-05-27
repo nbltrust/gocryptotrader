@@ -729,3 +729,21 @@ type DepositAddress struct {
 	Success    bool   `json:"success"`
 	AddressTag string `json:"tag"`
 }
+
+// CoinConfig ...
+type CoinConfig struct {
+	Coin        string        `json:"coin"`
+	Name        string        `json:"name"`
+	NetworkList []CoinNetwork `json:"networkList"`
+}
+
+// CoinNetwork ...
+type CoinNetwork struct {
+	Coin           string `json:"coin"`
+	Name           string `json:"name"`
+	Network        string `json:"network"`
+	WithdrawEnable bool   `json:"withdrawEnable"`
+	DepositEnable  bool   `json:"depositEnable"`
+	WithdrawFee    string `json:"withdrawFee"`
+	WithdrawMin    string `json:"withdrawMin"`
+}

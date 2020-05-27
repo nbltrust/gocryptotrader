@@ -738,11 +738,11 @@ func (b *Binance) GetDepositAddressForCurrencyNetwork(currency, network string) 
 		b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp)
 }
 
-// GetDepositAddressNetwork ...
-func (b *Binance) GetDepositAddressNetwork() (DepositAddress, error) {
+// GetCoinConfig ...
+func (b *Binance) GetCoinConfig() ([]CoinConfig, error) {
 	path := b.API.Endpoints.URL + "/sapi/v1/capital/config/getall"
 
-	resp := DepositAddress{}
+	resp := []CoinConfig{}
 	params := url.Values{}
 
 	return resp,
