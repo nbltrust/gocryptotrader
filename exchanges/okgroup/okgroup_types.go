@@ -25,10 +25,10 @@ type GetAccountCurrenciesResponse struct {
 
 // WalletInformationResponse response data for WalletInformation
 type WalletInformationResponse struct {
-	Available float64 `json:"available"`
-	Balance   float64 `json:"balance"`
-	Currency  string  `json:"currency"`
-	Hold      float64 `json:"hold"`
+	Available string `json:"available"`
+	Balance   string `json:"balance"`
+	Currency  string `json:"currency"`
+	Hold      string `json:"hold"`
 }
 
 // TransferAccountFundsRequest request data for TransferAccountFunds

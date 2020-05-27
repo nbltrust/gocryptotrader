@@ -172,7 +172,7 @@ func (o *OKGroup) UpdateOrderbook(p currency.Pair, a asset.Item) (*orderbook.Bas
 
 // UpdateAccountInfo retrieves balances for all enabled currencies
 func (o *OKGroup) UpdateAccountInfo() (account.Holdings, error) {
-	currencies, err := o.GetSpotTradingAccounts()
+	currencies, err := o.GetAccountWalletInformation("")
 	if err != nil {
 		return account.Holdings{}, err
 	}
@@ -186,7 +186,7 @@ func (o *OKGroup) UpdateAccountInfo() (account.Holdings, error) {
 		if parseErr != nil {
 			return resp, parseErr
 		}
-		free, parseErr := strconv.ParseFloat(currencies[i].Balance, 64)
+		free, parseErr := strconv.ParseFloat(currencies[i].Available, 64)
 		if parseErr != nil {
 			return resp, parseErr
 		}

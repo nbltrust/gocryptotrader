@@ -537,7 +537,7 @@ func (b *Binance) SendAuthHTTPRequest(method, path string, params url.Values, f 
 		return err
 	}
 
-	fmt.Println(string(interim))
+	fmt.Println("response body: ", string(interim))
 	if err := json.Unmarshal(interim, &errCap); err == nil {
 		if !errCap.Success && errCap.Message != "" {
 			return errors.New(errCap.Message)

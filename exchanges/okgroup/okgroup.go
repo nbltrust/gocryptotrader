@@ -624,6 +624,7 @@ func (o *OKGroup) SendHTTPRequest(httpMethod, requestType, requestPath string, d
 		return err
 	}
 
+	fmt.Println("response body: ", string(intermediary))
 	err = json.Unmarshal(intermediary, &errCap)
 	if err == nil {
 		if errCap.ErrorMessage != "" {

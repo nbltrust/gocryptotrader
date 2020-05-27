@@ -673,7 +673,7 @@ func (h *HUOBI) Withdraw(c currency.Code, address, addrTag string, amount, fee f
 		data.Fee = strconv.FormatFloat(fee, 'f', -1, 64)
 	}
 
-	if c == currency.XRP {
+	if len(addrTag) > 0 {
 		data.AddrTag = addrTag
 	}
 
@@ -844,6 +844,7 @@ func (h *HUOBI) SendAuthenticatedHTTPRequest(method, endpoint string, values url
 		return err
 	}
 
+	fmt.Println("response body: ", string(interim))
 	if isVersion2API {
 		var errCap ResponseV2
 		if err = json.Unmarshal(interim, &errCap); err == nil {
