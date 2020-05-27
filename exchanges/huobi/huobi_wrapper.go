@@ -442,10 +442,9 @@ func (h *HUOBI) UpdateAccountInfo() (account.Holdings, error) {
 				for i := range currencyDetails {
 					if currencyDetails[i].CurrencyName == currency.NewCode(balances[j].Currency) {
 						if frozen {
-							currencyDetails[i].Hold = balances[j].Balance
-						} else {
-							currencyDetails[i].TotalValue = balances[j].Balance
+							currencyDetails[i].Hold += balances[j].Balance
 						}
+						currencyDetails[i].TotalValue += balances[j].Balance
 						updated = true
 					}
 				}
@@ -460,13 +459,12 @@ func (h *HUOBI) UpdateAccountInfo() (account.Holdings, error) {
 							CurrencyName: currency.NewCode(balances[j].Currency),
 							Hold:         balances[j].Balance,
 						})
-				} else {
-					currencyDetails = append(currencyDetails,
-						account.Balance{
-							CurrencyName: currency.NewCode(balances[j].Currency),
-							TotalValue:   balances[j].Balance,
-						})
 				}
+				currencyDetails = append(currencyDetails,
+					account.Balance{
+						CurrencyName: currency.NewCode(balances[j].Currency),
+						TotalValue:   balances[j].Balance,
+					})
 			}
 
 			acc.Currencies = currencyDetails

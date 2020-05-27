@@ -33,6 +33,7 @@ const (
 	huobiMarketTradeHistory    = "market/history/trade"
 	huobiSymbols               = "common/symbols"
 	huobiCurrencies            = "common/currencys"
+	huobiCurrencyReference     = "reference/currencies"
 	huobiTimestamp             = "common/timestamp"
 	huobiAccounts              = "account/accounts"
 	huobiAccountBalance        = "account/accounts/%s/balance"
@@ -258,6 +259,23 @@ func (h *HUOBI) GetCurrencies() ([]string, error) {
 	err := h.SendHTTPRequest(urlPath, &result)
 	if result.ErrorMessage != "" {
 		return nil, errors.New(result.ErrorMessage)
+	}
+	return result.Currencies, err
+}
+
+// GetCurrencyReference returns currency reference by Huobi
+func (h *HUOBI) GetCurrencyReference(currency string) ([]Currency, error) {
+	type response struct {
+		ResponseV2
+		Currencies []Currency `json:"data"`
+	}
+
+	var result response
+	urlPath := fmt.Sprintf("%s/v%s/%s?currency=%s", h.API.Endpoints.URL, huobiAPIVersion2, huobiCurrencyReference, currency)
+
+	err := h.SendHTTPRequest(urlPath, &result)
+	if result.Code != 200 {
+		return nil, errors.New(result.Message)
 	}
 	return result.Currencies, err
 }

@@ -635,3 +635,24 @@ type wsKLineResponseThing struct {
 	Rep    string `json:"rep"`
 	Status string `json:"status"`
 }
+
+// Currency ...
+type Currency struct {
+	Currency string  `json:"currency"`
+	Chains   []Chain `json:"chains"`
+}
+
+// Chain ...
+type Chain struct {
+	Chain                   string `json:"chain"`
+	BaseChain               string `json:"baseChain"`
+	BaseChainProtocol       string `json:"baseChainProtocol"`
+	WithdrawFeeType         string `json:"withdrawFeeType"`
+	IsDynamic               bool   `json:"isDynamic"`
+	TransactFeeWithdraw     string `json:"transactFeeWithdraw"`
+	MinTransactFeeWithdraw  string `json:"minTransactFeeWithdraw"`
+	MaxTransactFeeWithdraw  string `json:"maxTransactFeeWithdraw"`
+	TransactFeeRateWithdraw string `json:"transactFeeRateWithdraw"`
+	WithdrawStatus          string `json:"withdrawStatus"`
+	DepositStatus           string `json:"depositStatus"`
+}

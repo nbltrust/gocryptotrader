@@ -186,7 +186,7 @@ func (o *OKGroup) UpdateAccountInfo() (account.Holdings, error) {
 		if parseErr != nil {
 			return resp, parseErr
 		}
-		totalValue, parseErr := strconv.ParseFloat(currencies[i].Balance, 64)
+		free, parseErr := strconv.ParseFloat(currencies[i].Balance, 64)
 		if parseErr != nil {
 			return resp, parseErr
 		}
@@ -194,7 +194,7 @@ func (o *OKGroup) UpdateAccountInfo() (account.Holdings, error) {
 			account.Balance{
 				CurrencyName: currency.NewCode(currencies[i].Currency),
 				Hold:         hold,
-				TotalValue:   totalValue,
+				TotalValue:   free + hold,
 			})
 	}
 
