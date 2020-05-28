@@ -654,7 +654,9 @@ func (h *HUOBI) GetMarginAccountBalance(symbol string) ([]MarginAccountBalance, 
 // Withdraw withdraws the desired amount and currency
 func (h *HUOBI) Withdraw(c currency.Code, address, addrTag string, amount, fee float64) (int64, error) {
 	resp := struct {
-		WithdrawID int64 `json:"data"`
+		Status     string `json:"status"`
+		WithdrawID int64  `json:"data,emitempty"`
+		ErrMsg     string `json:"err-msg"`
 	}{}
 
 	data := struct {
@@ -677,7 +679,13 @@ func (h *HUOBI) Withdraw(c currency.Code, address, addrTag string, amount, fee f
 		data.AddrTag = addrTag
 	}
 
-	err := h.SendAuthenticatedHTTPRequest(http.MethodPost, huobiWithdrawCreate, nil, data, &resp.WithdrawID, false)
+	err := h.SendAuthenticatedHTTPRequest(http.MethodPost, huobiWithdrawCreate, nil, data, &resp, false)
+	if err != nil {
+		return 0, err
+	}
+	if resp.Status != "ok" {
+		return 0, fmt.Errorf("%s", resp.ErrMsg)
+	}
 	return resp.WithdrawID, err
 }
 
