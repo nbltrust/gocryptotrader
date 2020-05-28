@@ -63,10 +63,10 @@ type AccountWithdrawRequest struct {
 
 // AccountWithdrawResponse response data for AccountWithdrawResponse
 type AccountWithdrawResponse struct {
-	Amount       float64 `json:"amount"`
-	Currency     string  `json:"currency"`
-	Result       bool    `json:"result"`
-	WithdrawalID int64   `json:"withdrawal_id"`
+	Amount       string `json:"amount"`
+	Currency     string `json:"currency"`
+	Result       bool   `json:"result"`
+	WithdrawalID string `json:"withdrawal_id"`
 }
 
 // GetAccountWithdrawalFeeResponse response data for GetAccountWithdrawalFee

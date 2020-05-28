@@ -404,7 +404,7 @@ func (o *OKGroup) WithdrawCryptocurrencyFunds(withdrawRequest *withdraw.Request)
 	}
 
 	return &withdraw.ExchangeResponse{
-		ID: strconv.FormatInt(withdrawal.WithdrawalID, 10),
+		ID: withdrawal.WithdrawalID,
 	}, nil
 }
 
