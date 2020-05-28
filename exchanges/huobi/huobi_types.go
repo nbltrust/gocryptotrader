@@ -655,4 +655,9 @@ type Chain struct {
 	TransactFeeRateWithdraw string `json:"transactFeeRateWithdraw"`
 	WithdrawStatus          string `json:"withdrawStatus"`
 	DepositStatus           string `json:"depositStatus"`
+	MinDepositAmt           string `json:"minDepositAmt"`
+	MinWithdrawAmt          string `json:"minWithdrawAmt"`
+	MaxWithdrawAmt          string `json:"maxWithdrawAmt"`
+	WithdrawQuotaPerDay     string `json:"withdrawQuotaPerDay"`
+	WithdrawPrecision       int64  `json:"withdrawPrecision"`
 }
