@@ -92,6 +92,21 @@ type WithdrawalHistoryResponse struct {
 	WithdrawalID  string    `json:"withdrawal_id"`
 }
 
+// DepositHistoryResponse response data for DepositHistoryResponse
+type DepositHistoryResponse struct {
+	Amount        float64   `json:"amount,string"`
+	Currency      string    `json:"currency"`
+	From          string    `json:"from"`
+	Status        int64     `json:"status,string"`
+	Timestamp     time.Time `json:"timestamp"`
+	To            string    `json:"to"`
+	TransactionID string    `json:"txid"`
+	Memo          string    `json:"memo"`
+	Tag           string    `json:"tag"`
+	PaymentID     string    `json:"payment_id"`
+	DepositID     int64     `json:"deposit_id"`
+}
+
 // GetAccountBillDetailsRequest request data for GetAccountBillDetailsRequest
 type GetAccountBillDetailsRequest struct {
 	Currency string `url:"currency,omitempty"` // [optional] token ,information of all tokens will be returned if the field is left blank

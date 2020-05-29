@@ -771,6 +771,28 @@ func (b *Binance) GetWithdrawalHistory(asset string, startTimestamp int64) ([]Wi
 	return resp.WithdrawList, nil
 }
 
+// GetDepositHistory get deposit history
+func (b *Binance) GetDepositHistory(asset string, startTimestamp int64) ([]DepositHistory, error) {
+	var resp DepositHistoryResponse
+	path := b.API.Endpoints.URL + depositHistory
+
+	params := url.Values{}
+	params.Set("asset", asset)
+	if startTimestamp > 0 {
+		params.Set("startTime", fmt.Sprintf("%d", startTimestamp))
+	}
+
+	if err := b.SendAuthHTTPRequest(http.MethodGet, path, params, request.Unset, &resp); err != nil {
+		return nil, err
+	}
+
+	if !resp.Success {
+		return nil, errors.New(resp.Msg)
+	}
+
+	return resp.DepositList, nil
+}
+
 // GetWsAuthStreamKey will retrieve a key to use for authorised WS streaming
 func (b *Binance) GetWsAuthStreamKey() (string, error) {
 	var resp UserAccountStream

@@ -313,6 +313,24 @@ type NewOrderResponse struct {
 	} `json:"fills"`
 }
 
+// DepositHistory ...
+type DepositHistory struct {
+	Amount     float64 `json:"amount"`
+	Address    string  `json:"address"`
+	AddressTag string  `json:"addressTag"`
+	Asset      string  `json:"asset"`
+	TxID       string  `json:"txId"`
+	Status     int     `json:"status"`
+	InsertTime int64   `json:"insertTime"`
+}
+
+// DepositHistoryResponse ...
+type DepositHistoryResponse struct {
+	Success     bool             `json:"success"`
+	Msg         string           `json:"msg"`
+	DepositList []DepositHistory `json:"depositList"`
+}
+
 // WithdrawalHistory ...
 type WithdrawalHistory struct {
 	ID              string  `json:"ID"`

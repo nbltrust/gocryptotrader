@@ -74,6 +74,7 @@ const (
 	okGroupWithdraw                    = "withdrawal"
 	okGroupGetWithdrawalFees           = "withdrawal/fee"
 	okGroupGetWithdrawalHistory        = "withdrawal/history"
+	okGroupGetDepositHistory           = "deposit/history"
 	okGroupGetDepositAddress           = "deposit/address"
 	// Margin based endpoints
 	okGroupGetMarketAvailability = "availability"
@@ -152,6 +153,17 @@ func (o *OKGroup) GetAccountWithdrawalHistory(currency string) (resp []Withdrawa
 	return resp, o.SendHTTPRequest(http.MethodGet, okGroupAccountSubsection, requestURL, nil, &resp, true)
 }
 
+// GetAccountDepositHistory retrieves all recent deposit records.
+func (o *OKGroup) GetAccountDepositHistory(currency string) (resp []DepositHistoryResponse, _ error) {
+	var requestURL string
+	if currency != "" {
+		requestURL = fmt.Sprintf("%v/%v", okGroupGetDepositHistory, currency)
+	} else {
+		requestURL = okGroupGetDepositHistory
+	}
+	return resp, o.SendHTTPRequest(http.MethodGet, okGroupAccountSubsection, requestURL, nil, &resp, true)
+}
+
 // GetAccountBillDetails retrieves the bill details of the wallet. All the information will be paged and sorted in reverse chronological order,
 // which means the latest will be at the top. Please refer to the pagination section for additional records after the first page.
 // 3 months recent records will be returned at maximum
@@ -169,7 +181,7 @@ func (o *OKGroup) GetAccountDepositAddressForCurrency(currency string) (resp []G
 }
 
 // GetAccountDepositHistory retrieves the deposit history of all tokens.100 recent records will be returned at maximum
-func (o *OKGroup) GetAccountDepositHistory(currency string) (resp []GetAccountDepositHistoryResponse, _ error) {
+/*func (o *OKGroup) GetAccountDepositHistory(currency string) (resp []GetAccountDepositHistoryResponse, _ error) {
 	var requestURL string
 	if currency != "" {
 		requestURL = fmt.Sprintf("%v/%v", OKGroupGetAccountDepositHistory, currency)
@@ -177,7 +189,7 @@ func (o *OKGroup) GetAccountDepositHistory(currency string) (resp []GetAccountDe
 		requestURL = OKGroupGetAccountDepositHistory
 	}
 	return resp, o.SendHTTPRequest(http.MethodGet, okGroupAccountSubsection, requestURL, nil, &resp, true)
-}
+}*/
 
 // GetSpotTradingAccounts retrieves the list of assets(only show pairs with balance larger than 0), the balances, amount available/on hold in spot accounts.
 func (o *OKGroup) GetSpotTradingAccounts() (resp []GetSpotTradingAccountResponse, _ error) {

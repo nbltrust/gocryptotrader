@@ -278,7 +278,7 @@ type WithdrawQuota struct {
 	Chains   []ChainQuota `json:"chains"`
 }
 
-/* WithdrawalHistory ...
+/* WithdrawDepositHistory ...
 {
 	"id": 1171,
 	"type": "deposit",
@@ -292,7 +292,7 @@ type WithdrawQuota struct {
 	"created-at": 1510912472199,
 	"updated-at": 1511145876575
 }*/
-type WithdrawalHistory struct {
+type WithdrawDepositHistory struct {
 	ID         int     `json:"id"`
 	Type       string  `json:"type"`
 	Currency   string  `json:"currency"`

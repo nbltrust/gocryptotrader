@@ -741,9 +741,9 @@ func (h *HUOBI) QueryDepositAddresses(cryptocurrency string) ([]DepositAddress, 
 }
 
 // GetWithdrawalHistory returns the withdrawal history
-func (h *HUOBI) GetWithdrawalHistory(cryptocurrency string) ([]WithdrawalHistory, error) {
+func (h *HUOBI) GetWithdrawalHistory(cryptocurrency string) ([]WithdrawDepositHistory, error) {
 	resp := struct {
-		WithdrawalList []WithdrawalHistory `json:"data"`
+		WithdrawalList []WithdrawDepositHistory `json:"data"`
 	}{}
 
 	vals := url.Values{}
@@ -757,6 +757,25 @@ func (h *HUOBI) GetWithdrawalHistory(cryptocurrency string) ([]WithdrawalHistory
 		return nil, err
 	}
 	return resp.WithdrawalList, nil
+}
+
+// GetDepositHistory returns the deposit history
+func (h *HUOBI) GetDepositHistory(cryptocurrency string) ([]WithdrawDepositHistory, error) {
+	resp := struct {
+		DepositList []WithdrawDepositHistory `json:"data"`
+	}{}
+
+	vals := url.Values{}
+	vals.Set("currency", cryptocurrency)
+	vals.Set("type", "deposit")
+	vals.Set("size", "100")
+	vals.Set("direct", "next")
+
+	err := h.SendAuthenticatedHTTPRequest(http.MethodGet, huobiDepositWithdrawHistory, vals, nil, &resp, false)
+	if err != nil {
+		return nil, err
+	}
+	return resp.DepositList, nil
 }
 
 // QueryWithdrawQuotas returns the users cryptocurrency withdraw quotas
